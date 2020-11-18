@@ -3,4 +3,4 @@
 	url = https://github.com/pietrzakadrian/bank-server
 [submodule "client"]
 	path = client
-	url = https://github.com/pietrzakadrian/bank-client
+	url = https://github.com/tjgrist/bank-client
