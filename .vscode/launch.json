@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch via npm",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/client",
+            "runtimeExecutable": "npm",
+            "trace": true,
+            "runtimeArgs": [
+                "run-script",
+                "start"
+            ]
+        },
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/client",
+            "sourceMaps": true,
+        },
+        {
+            "name": "Attach to Process",
+            "type": "node",
+            "protocol": "inspector",
+            "request": "attach",
+            "stopOnEntry": false,
+            "port": 3000,
+            "localRoot": "${workspaceFolder}/client",
+            "sourceMaps": true
+        }
+    ]
+}
